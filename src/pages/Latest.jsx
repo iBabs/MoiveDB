@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 
 const Latest = () => {
 
-    
+    const API_KEY = process.env.REACT_APP_API_KEY
 
-    const api_url = 'https://api.themoviedb.org/3/trending/movie/week?api_key=8b73a9dd93575808c1a0a84676cf060d';
+    const api_url = `https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}`;
     const [movieData, setMovieData] = useState([])
 
     useEffect(()=>{
