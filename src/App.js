@@ -5,6 +5,7 @@ import RootLayout from './components/RootLayout';
 import About from './pages/About';
 import Latest from './pages/Latest';
 import MovieDetails from './pages/MovieDetail';
+import NotFound from './pages/NotFound';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='about' element={<About/>}/>
         <Route path='latest' element={<Latest/>}/>
         <Route path='latest/:id' element={<MovieDetails/>}/>
+        <Route path='*' element={<NotFound/>}/>
       
 
         
