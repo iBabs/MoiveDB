@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import MovieCard from "../components/MovieCard";
 import './About.css'
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -28,7 +29,7 @@ const Latest = () => {
     <Container>
       <h2>Latest</h2>
       <div className="layout">
-       {movieData && movieData.map(mov=>( <MovieCard {...mov}/>))}
+       {movieData && movieData.map(mov=>( <Link to={`${mov.id}`}> <MovieCard {...mov}/></Link>))}
       </div>
     </Container>
   );

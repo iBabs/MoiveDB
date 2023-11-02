@@ -4,6 +4,7 @@ import HomePage from './pages/Home';
 import RootLayout from './components/RootLayout';
 import About from './pages/About';
 import Latest from './pages/Latest';
+import MovieDetails from './pages/MovieDetail';
 
 
 
@@ -18,6 +19,9 @@ function App() {
         <Route index element={<HomePage/>}/>
         <Route path='about' element={<About/>}/>
         <Route path='latest' element={<Latest/>}/>
+        <Route path='latest/:id' element={<MovieDetails/>}/>
+      
+
         
       </Route>
       </Routes>
