@@ -11,7 +11,7 @@ const MovieDetails = () => {
     fetch(api_url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setMovieData(data);
       });
   }, [api_url]);
