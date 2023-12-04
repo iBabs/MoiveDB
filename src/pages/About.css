@@ -1,5 +1,7 @@
 .layout{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
+    grid-template-columns: repeat(auto-fit, minmax(11rem,16rem));
     gap: 10px;
+    justify-content: center;
+    min-height: 50dvh;
 }

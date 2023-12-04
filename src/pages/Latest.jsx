@@ -29,7 +29,7 @@ const Latest = () => {
     <Container>
       <h2>Latest</h2>
       <div className="layout">
-       {movieData && movieData.map(mov=>( <Link to={`${mov.id}`}> <MovieCard {...mov}/></Link>))}
+       {movieData.length!==0? movieData.map(mov=>( <Link to={`${mov.id}`}> <MovieCard {...mov}/></Link>)):<p>Loading... please wait</p>}
       </div>
     </Container>
   );
